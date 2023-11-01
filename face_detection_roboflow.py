@@ -2,9 +2,9 @@ import cv2
 from roboflow import Roboflow
 
 # Initialize Roboflow
-rf = Roboflow(api_key="SQ7otNG7MCDy8UPFj81t")
-project = rf.workspace().project("pbl-final")
-model = project.version(2).model
+rf = Roboflow(api_key="YOUR_API_KEY")
+project = rf.workspace().project("project-name")
+model = project.version().model
 
 # Load an image using OpenCV
 image = cv2.imread("images/img1.jpg")
